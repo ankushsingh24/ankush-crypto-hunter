@@ -2,7 +2,7 @@ import React, { createContext, useState, useContext, useEffect } from "react";
 
 const Crypto = createContext();
 
-const CrytoContext = ({ children }) => {
+const CryptoContext = ({ children }) => {
   const [currency, setCurrnecy] = useState("INR");
   const [symbol, setSymbol] = useState("₹");
 
@@ -18,7 +18,7 @@ const CrytoContext = ({ children }) => {
   );
 };
 
-export default CrytoContext;
+export default CryptoContext;
 
 export const CryptoState = () => {
   return useContext(Crypto);
